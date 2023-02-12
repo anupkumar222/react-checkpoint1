@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom css */
+
+.container {
+    width: 40%;
+    text-align: center;
+    margin: 2rem auto;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+.input {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.button {
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    color: white;
+    background-color: darkcyan;
+}
+.container-calender {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: aliceblue;
+    padding: 2rem;
+    position: relative;
+}
+.dates {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+.activity {
+    padding: 2rem;
+    text-align: center;
+    width: 30%;
+    background-color: darkgray;
+}
+.month {
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    cursor: pointer;
+    width: 10%;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-color: antiquewhite;
+    
+}
+h2{
+    font-size: 2rem;
+    color: black;
+}
+p {
+    color: white;
+    background-color: crimson;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.active {
+    background-color: burlywood;
+}
+.date:hover {
+    border-color: blueviolet;
+}
+
+.delete {
+    cursor: pointer;
+    background-color: aliceblue;
+    content: "";
+    display: block;
+    right: 0rem;
+    color: red;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    position: absolute;
+    top: 0rem ;
+    /* -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transform-origin: center center;
+    transform-origin: center center; */
+}
